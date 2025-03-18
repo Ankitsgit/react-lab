@@ -1,0 +1,32 @@
+in vite--
+ --- app.js -  ek function likha 
+    so me me ek function declare kar sakta hu in 
+
+    ---main.jsx----
+        ----
+        function MyApp(){
+           return (
+                <div>
+                  <h1>Custom App | chai</h1>
+                </div>
+            )
+        }
+
+        // this above synatx is parse into 
+            //  const ReactElement = {
+            //     type: 'a',
+            //     props: {
+            //         href: 'https://google.com',
+            //         target: '_blank'
+            //     },
+            //     children: 'Click me to visit google'
+            // }
+
+            
+        ReactDOM.createRoot(document.getElementById('root')).render(
+            <StrictMode>
+                <MyApp />// this is a jsx syntax -by using bundler bebble by react
+                 MyApp()-at the end bundler <MyApp/> convert into this.
+                   
+            </StrictMode>,
+)    
