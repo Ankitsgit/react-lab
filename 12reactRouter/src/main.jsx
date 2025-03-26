@@ -13,6 +13,8 @@ import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 
 import App from './App.jsx'
 
+// this is a array object
+ 
 // const router =createBrowserRouter([
 //   {
 //     Path: '/',
