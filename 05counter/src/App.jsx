@@ -12,27 +12,30 @@ function App() {
    // counter = counter + 1
     console.log('counter value:', counter)
     if(counter<20){
-    setCounter(counter+1)}
+    // setCounter(counter+1)
 
     // ----if this condition arises------
      /*
-     setCounter(counter+1)}
-     setCounter(counter+1)}
-     setCounter(counter+1)}
-     setCounter(counter+1)}
-
+     setCounter(counter+1)
+     setCounter(counter+1)
+     setCounter(counter+1)
+     setCounter(counter+1)
+    // }  
      // then there is no change because react send ui updates 
      // in batches of same methhod
-     */
+    //  */
 
      //---agar esa koi case arise hota hai ----
-     /* //----using callbacks 
-     setCounter(prevCounter => counter +1)
-     setCounter(prevCounter => counter +1)
-     setCounter(prevCounter => counter +1)
-     setCounter(prevCounter => counter +1)
+    //  /* 
+     //----using callbacks 
 
-     */
+     setCounter(prevCounter => counter +1)
+     setCounter(prevCounter => counter +1)
+     setCounter(prevCounter => counter +1)
+     setCounter(prevCounter => counter +1)
+    }
+
+    //  */
 
 
     else{

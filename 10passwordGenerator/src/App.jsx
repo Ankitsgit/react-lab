@@ -40,12 +40,12 @@ function App() {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 999);
     window.navigator.clipboard.writeText(password)
+    
   }, [password])
 
 
   //useEffect
-
-  useEffect(() => {
+const control = useCallback(() => {
     passwordGenerator()
   }, [length, numberAllowed, charAllowed, passwordGenerator])
 
@@ -59,9 +59,14 @@ function App() {
             value={password}
             className="outline-none w-full py-1 px-3"
             placeholder="Password"
-            readOnly    
+            readOnly
             ref={passwordRef} 
        />
+        <button
+        onClick={control}
+        className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
+        >generate</button>
+
        <button
         onClick={copyPasswordToClipboard}
         className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
